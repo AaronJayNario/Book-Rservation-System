@@ -30,6 +30,7 @@ img.background {
   position: absolute;
 }
 
+
 .navigation > p {
   font-size: x-large;
   padding-left: 50%;
@@ -67,10 +68,17 @@ img {
   transition: width 0.35s;
   -webkit-transition: width 0.35s;
   overflow: hidden;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 
 .logoutBtn:hover {
   width: 200px;
+  border-radius: 5px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
 .logoutBtn:hover .logoutC {
