@@ -83,31 +83,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="admin_login.css">
-    <!-- Add your head content here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Reservation System</title>
+    <link rel="icon" type="image/x-icon" href="/img/book-16.png">
+    <link rel="stylesheet" href="Admin_login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
 
 <body>
-
-<div class="navigation">
-        <h1>Batangas State University</h1>
-        <img src="img/Batangas_State_Logo.png" alt="BSU Logo">
-        </a>
+    <div class="navigation">
+        <h1>Book Reservation System</h1>
+        <img src="img/book.png" alt="BSU Logo">
     </div>
-    <img class="background" src="img/bsu_pic">
-    <!-- Display the login form if not logged in -->
+    <img class="background" src="img/book2.webp">
+   
     <div class="login-form">
+    <h2>ADMIN LOGIN</h2>
+        
         <?php if (isset($error_message)): ?>
             <p class="error">
                 <?php echo $error_message; ?>
             </p>
         <?php endif; ?>
-        <form method="post" action="">
-            <label for="contact">Contact:</label>
-            <input type="text" id="contact" name="contact" required>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+        <form method="post" action="">
+        <br>
+            <label for="contact"></label>
+            <input type="text" id="contact" name="contact" placeholder="Contact" required>
+
+            <label for="password"></label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
 
             <button type="submit">Login</button>
         </form>

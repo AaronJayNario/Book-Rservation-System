@@ -38,45 +38,62 @@
       echo "<script type='text/javascript'>alert('Book data updated successfully!')</script>";
     }             
 ?>
+<!DOCTYPE html>
+<html lang="en">
 
-<h1 class="text-center">Update Book Details</h1>
-  <div class="container ">
-    <form action="" method="post">
-      <div class="form-group">
-        <label for="user" >Book Name</label>
-        <input type="text" name="bookName" class="form-control" value="<?php echo $bookName  ?>">
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Update Book Details</title>
+    <link href="design/add_style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
-      <div class="form-group">
-        <label for="email" >Book Description</label>
-        <input type="text" name="bookDes"  class="form-control" value="<?php echo $bookDes  ?>">
-      </div>
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">Update Book Details</h1>
+    </header>
+    <img class="background" src="img/book2.webp">
+    <div class="login-container">
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="boonkname">Book Name</label>
+                <input type="text" name="bookName" class="form-control" value="<?php echo $bookName; ?>">
+            </div>
+
+            <div class="form-group">
+                <label for="decription">Book Description</label>
+                <input type="text" name="bookDes" class="form-control" value="<?php echo $bookDes; ?>">
+            </div>
+
+            <div class="form-group">
+                <label for="author">Book Author</label>
+                <input type="text" name="bookAut" class="form-control" value="<?php echo $bookAut; ?>">
+            </div>
+
+            <div class="form-group">
+                <label for="Category">Book Category</label>
+                <input type="text" name="bookCat" class="form-control" value="<?php echo $bookCat; ?>">
+            </div>
+
+            <div class="form-group">
+                <label for="ISBN">Book ISBN</label>
+                <input type="text" name="bookISBN" class="form-control" value="<?php echo $bookISBN; ?>">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" name="update" class="btn btn-primary mt-2" value="Update">
+            </div>
+        </form>
+        <div class="container text-center mt-5">
+        <a href="adminBook.php" class="btn btn-warning mt-5"> Back </a>
+    </div>
+    </div>
+
+
     
-      <div class="form-group">
-        <label for="pass" >Book Author</label>
-        <input type="password" name="bookAut"  class="form-control" value="<?php echo $bookAut  ?>">
-      </div>
-      
-      <div class="form-group">
-        <label for="pass" >Book Category</label>
-        <input type="password" name="bookCat"  class="form-control" value="<?php echo $bookCat  ?>">
-      </div>
 
-      <div class="form-group">
-        <label for="pass" >Book ISBN</label>
-        <input type="password" name="bookISBN"  class="form-control" value="<?php echo $bookISBN  ?>">
-      </div>
+</body>
 
-      <div class="form-group">
-         <input type="submit"  name="update" class="btn btn-primary mt-2" value="update">
-      </div>
-    </form>    
-  </div>
-
-    <!-- a BACK button to go to the home page -->
-    <div class="container text-center mt-5">
-      <a href="adminBook.php" class="btn btn-warning mt-5"> Back </a>
-    <div>
-
-<!-- Footer -->
+</html>

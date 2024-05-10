@@ -48,7 +48,7 @@ if (isset($_POST['register'])) {
 <head>
     <meta charset="UTF-8">
     <title>ADD USER</title>
-    <link href="design/login_style.css" rel="stylesheet">
+    <link href="design/add_style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
@@ -56,17 +56,13 @@ if (isset($_POST['register'])) {
 
 <body>
     <header>
-        <img src="img/Batangas_State_Logo.png">
-        <h1>Add Student User</h1>
+        <img src="img/user.webp">
+        <h1>Add User</h1>
     </header>
-
-    </div>
-    <img class="background" src="img/bsu_pic">
-
+    <img class="background" src="img/book2.webp">
     <div class="login-container">
     <?php if (isset($error_message)): ?>
-            <p style="color: #ff0000;
-margin-bottom: 10px;">
+            <p style="color: #ff0000; margin-bottom: 10px;">
                 <?php echo $error_message; ?>
             </p>
         <?php endif; ?>

@@ -5,7 +5,7 @@ session_start();
 
 <head>
     <meta charset="UTF-8">
-    <title>Book Reservation</title>
+    <title>History</title>
     <link href="design/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -14,19 +14,16 @@ session_start();
 
 <body>
     <div class="navigation" style="">
-        <h1>Batangas State University</h1>
-        <img src="img/Batangas_State_Logo.png">
+        <h1>Book Reservation System</h1>
+        <img src="img/book.png">
 
         <p><strong>Welcome: <?= $_SESSION['Efirstname']; ?></strong></p>
-        <a class="logoutBtn" href="empLogin.php">
-            <img src="img/cics_logo.jpg">
-            <div class="logoutC">Back</div>
-        </a>
+        
 
 
     </div>
 
-    <img class="background" src="img/bsu_pic">
+    <img class="background" src="img/book2.webp">
 
 
     <div class="libra-post">
